@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #111;
+    color: #e8e0d5;
+}
+
+
+header {
+    background-color: #0a0a0a;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #c45c26;
+    position: sticky;
+    top: 0;
+}
+
+.logo h1 {
+    color: #c45c26;
+    font-size: 1.4rem;
+}
+
+nav a {
+    color: #e8e0d5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #c45c26;
+}
+
+#btnMenu {
+    display: none;
+    background: none;
+    border: none;
+    color: #c45c26;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.inicio {
+    background-color: #1a1a1a;
+}
+
+.inicio h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.inicio h3 {
+    font-size: 1.6rem;
+    color: #c45c26;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.sobre {
+    background-color: #111;
+}
+
+.sobre h2 {
+    color: #c45c26;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    max-width: 450px;
+    margin: 0 auto;
+    color: #aaa;
+}
+
+.api {
+    background-color: #1a1a1a;
+}
+
+.api h2 {
+    color: #c45c26;
+    margin-bottom: 10px;
+}
+
+.api p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.api button {
+    background-color: #c45c26;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.api button:hover {
+    background-color: #e07a3a;
+}
+
+footer {
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+    color: #666;
+    font-size: 0.85rem;
+}
+.imagem{
+    width: 2000px ;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #0a0a0a;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 2px solid #c45c26;
+    }
+
+    nav.aberto {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    #btnMenu {
+        display: block;
+    }
+
+    .inicio h2 {
+        font-size: 1.8rem;
+    }
+
+    .inicio h3 {
+        font-size: 1.3rem;
+    }
+}
